@@ -1,0 +1,94 @@
+/* Reset browser defaults */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+
+/* Body styling */
+body {
+  background-color: #0d1117;
+  color: #e6edf3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+  padding: 20px;
+}
+
+/* Heading */
+h1 {
+  color: #00ffb3;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+}
+
+/* Paragraphs */
+p {
+  color: #c9d1d9;
+  font-size: 1.1rem;
+  margin-bottom: 15px;
+}
+
+/* Link styling */
+a {
+  color: #58a6ff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+a:hover {
+  color: #00ffb3;
+  text-decoration: underline;
+}
+
+/* Form styling */
+form {
+  background-color: rgba(255, 255, 255, 0.05);
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 0 15px rgba(0, 255, 179, 0.2);
+  width: 300px;
+}
+
+label {
+  margin-left: 10px;
+  font-size: 1.1rem;
+  color: #e6edf3;
+}
+
+/* Button styling */
+button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  font-size: 1.2rem;
+  border-radius: 8px;
+  margin-top: 15px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+button:hover {
+  background-color: #00ffb3;
+  transform: scale(1.05);
+  color: #000;
+}
+
+button:active {
+  transform: scale(0.95);
+}
+
+/* Smooth animation for page entry */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+body {
+  animation: fadeIn 1s ease-in;
+}
